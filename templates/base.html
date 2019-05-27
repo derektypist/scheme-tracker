@@ -37,10 +37,13 @@
                         <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
                     {% endif %}
                     <li>
+                        <a href=""
+                    </li>
+                    <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shopping-cart"></i> Cart
-                            {% if product_count > 0 %}
-                            <label class="badge badge-warning">{{ product_count }}</label>
+                            {% if scheme_count > 0 %}
+                            <label class="badge badge-warning">{{ scheme_count }}</label>
                             {% endif %}
                         </a>
                     </li>
@@ -68,7 +71,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>Made by Code Institute bootcampers</p>
+            <p>Made by Derek Dhammaloka</p>
         </div>
     </footer>
 </body>

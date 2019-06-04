@@ -12,7 +12,7 @@ I want to edit a scheme in order to update my progress for example.
 
 I want to obtain a scheme in the place that I live in for my home or business.
 
-Wireframes are supplied in the wireframes folder.
+Wireframes are supplied in the wireframes folder.  Documentation (narrative and presentation) is supplied in the documentation folder.
 
 ## Features
 

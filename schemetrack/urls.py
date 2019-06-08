@@ -15,24 +15,24 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from django.views.generic import RedirectView
-from django.views.static import serve
 from accounts import urls as urls_accounts
 from schemes import urls as urls_schemes
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
+from schemes.views import all_schemes
+from django.views import static
 from .settings import MEDIA_ROOT
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', RedirectView.as_view(url='schemes/')),
+    url(r'^$', all_schemes, name='index'),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^schemes/', include(urls_schemes)),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
     url(r'^schemes/', include('schemes.urls')),
-    url(r'^media/(?P<path>.*)$', serve, {'document_root': MEDIA_ROOT }),
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]

@@ -13,5 +13,5 @@ class Scheme(models.Model):
     cost = models.DecimalField(max_digits=6, decimal_places=2)
     image = models.ImageField(upload_to='images')
     
-    def __unicode__(self):
+    def __str__(self):
         return self.title   

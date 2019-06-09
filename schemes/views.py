@@ -9,7 +9,7 @@ def get_schemes(request):
     and render them to the 'schemeposts.html' template
     """
 
-    # Most recent (Published Date) first
+    # Display Most recent (Published Date) first
     schemes = Scheme.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
     return render(request, "schemeposts.html",{'schemes': schemes})
 
@@ -43,7 +43,7 @@ def create_or_edit_scheme(request, pk=None):
 
 def all_schemes(request):
     """
-    All Schemes
+    Display All Schemes
     """
     schemes = Scheme.objects.all()
-    return render(request, "schemeviews.html", {"schemes": schemes})
+    return render(request, "schemeposts.html", {"schemes": schemes})

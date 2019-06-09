@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row row-flex">
+    {% for scheme in schemes %}
+    
+    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+        <div class="panel-body">
+            <div class="scheme" style="background-image: url('{{ MEDIA_URL }}{{ scheme.image }}')"></div>
+                
+            <h3>{{ scheme.title }}</h3>
+            <div class="col-xs-9">
+                <p>{{ scheme.description }}</p>
+                <p>{{ scheme.comment }}</p>
+                <p><span class="boldtext">Published on:</span> {{ scheme.published_date }} </p>
+                <p><span class="boldtext">Views:</span> {{scheme.views}}</p>
+                <p>{{ scheme.cost }}</p>
+                <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Scheme</a>
+                <a href="{% url 'edit_scheme' post.id %}" class="btn btn-default">Edit Scheme</a>
+            </div>
+            
+            
+            <form method="post" action="{% url 'add_to_cart' scheme.id %}">
+                {% csrf_token %}
+                <div class="input-group">
+                    <input name="quantity" type="number" min="1" max="999" class="form-control" placeholder="Quantity">
+                    <span class="input-group-btn">
+                        <button class="btn btn-success" type="submit">Add To Cart</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

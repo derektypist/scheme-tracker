@@ -14,8 +14,9 @@
                 <p>{{ scheme.comment }}</p>
                 <p><span class="boldtext">Published on:</span> {{ scheme.published_date }} </p>
                 <p><span class="boldtext">Views:</span> {{scheme.views}}</p>
-                <p>{{ scheme.cost }}</p>
-                <a href="{% url 'get_posts' %}" class="btn btn-default">Back to Scheme</a>
+                <p><span class="boldtext">Completion (%):</span> {{ scheme.completion }}</p>
+                <p><span class="boldtext">Cost (£):</span> {{ scheme.cost }}</p>
+                <a href="{% url 'get_schemes' %}" class="btn btn-default">Back to Scheme</a>
                 <a href="{% url 'edit_scheme' post.id %}" class="btn btn-default">Edit Scheme</a>
             </div>
             

@@ -21,6 +21,12 @@ footer {
     background-color: #fff;
 }
 
+/* Style for lead Class */
+.lead {
+    
+}
+
+
 /* Style for accountform Class */
 .accountform {
     padding-top: 20px;
@@ -32,6 +38,23 @@ footer {
     display: block;
 }
 
+/* Masthead Styles */
+#masthead {
+    padding-left:10px;
+    min-height: 199px;
+}
+
+#masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+    margin-top: 50px;
+}
+
+#masthead .well{
+    margin-top: 31px;
+    min-height: 127px;
+}
+
 /* Style for badge Class */
 .badge {
     padding-left: 9px;
@@ -41,11 +64,13 @@ footer {
     border-radius: 9px;
 }
 
+/* Styles for label-warning and badge-warning Classes */
 .label-warning[href],
 .badge-warning[href] {
     background-color: #c67605;
 }
 
+/* Style for Scheme Class */
 .scheme {
     background-size: contain;
     background-position: center center;
@@ -55,27 +80,32 @@ footer {
     margin: 0 auto;
 }
 
+/* Styles for caption and p */
 caption p {
     word-wrap: break-word;
 }
 
+/* Styles for row and row-flex Classes */
 .row.row-flex {
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
+/* Style for panel-default Class */
 .panel-default {
     border-color: transparent;
     padding: 0 10px;
 }
 
+/* Style for panel-body Class */
 .panel-body {
     height: 100%;
     border: 1px solid #ddd;
 }
 
-.scheme-description {
+/* Style for scheme-comment Class */
+.scheme-comment {
     min-height: 40px;
 }
 

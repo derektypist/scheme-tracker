@@ -14,7 +14,7 @@
         
         <div class="caption">
             <h3>{{ item.product.name }}</h3>
-            <p class="scheme-description">{{ item.scheme.description }}</p>
+            <p class="scheme-comment">{{ item.scheme.comment }}</p>
             <p>{{ item.scheme.cost }}</p>
             <p>
                 <form class="form-inline" method="post" action="{% url 'adjust_cart' item.id %}">

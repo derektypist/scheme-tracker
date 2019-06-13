@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from products.models import Scheme
+from schemes.models import Scheme
 
 def cart_contents(request):
     """

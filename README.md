@@ -40,6 +40,10 @@ It will be deployed to Heroku.  Make sure requirements.txt is up to date.
 
 ### Content
 
+Visited GitHub Page of PCSwimming to get ideas
+
+https://github.com/hschafer2017/PCSwimming/blob/master/static/css/base.css
+
 ### Media
 
 ### Acknowledgements

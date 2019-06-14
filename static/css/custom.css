@@ -131,3 +131,51 @@ caption p {
     width: 125px;
     height: 95px;
 }
+
+/*BUTTONS*/
+
+.login-btn {
+    background-color: #FFD236;
+    border-color: #FFD236;
+    color: #fafafa;
+    width: -webkit-fill-available;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    border-radius: 0px;
+    box-shadow: 0px 0px 25px #dcdcdc;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #002865;
+    border-color: #002865;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.new-scheme {
+    color: #fafafa;
+    width: 200px;
+    /*padding-left: 0px;*/
+}
+
+.buy {
+    width: 100px;
+    margin-top: 27px;
+    /*padding-left: 10px;*/
+    /*margin-left: 5px;*/
+    box-shadow: 0px 0px 10px #d3d3d3;
+}
+
+.dropdown-toggle {
+    width: 145px;
+}
+
+.responsive {
+    width: -webkit-fill-available;
+}

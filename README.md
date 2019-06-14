@@ -30,6 +30,7 @@ Checkout
 ## Testing
 
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
+Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
 
 ## Deployment
 

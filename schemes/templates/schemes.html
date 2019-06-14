@@ -1,4 +1,4 @@
-{% extends 'home/base.html' %} 
+{% extends 'base.html' %} 
 {% load static from staticfiles %} 
 {% load bootstrap_tags %} 
 {% block content %}
@@ -19,31 +19,31 @@
     <div class="col-xs-hidden col-sm-hidden col-md-6 col-lg-6">
         <div class="container posts">
             <br><br><br><br>
-             <a href="{% url 'view_cart' %}" class='btn btn-lg login-btn new-post responsive'><i class="fa fa-shopping-cart"></i> Cart</a>
+             <a href="{% url 'view_cart' %}" class='btn btn-lg login-btn new-scheme responsive'><i class="fa fa-shopping-cart"></i> Cart</a>
             <br><br>
             <h3 class='heading'>Shop</h3>
             <br>
             
-            {% for product in products %}
+            {% for scheme in schemes %}
             
             <br><br>
             <div class="panel-body items">
                 <div class="col-sm-3 col-md-3 col-lg-3 quick-photo-view">
                     <br>
-                    <img src="{{MEDIA_URL}}{{product.image}}" class='product-image' alt="{{product.name}}" />
+                    <img src="{{MEDIA_URL}}{{scheme.image}}" class='scheme-image' alt="{{scheme.title}}" />
                 </div>
                     <br>
                 <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="row">
-                        <p class='product-name'>{{product.name}}</p>
+                        <p class='scheme-name'>{{scheme.title}}</p>
                     </div>
                     <div class="row">
-                        <p class='product info'>{{product.description|truncatewords:10}}</p>
+                        <p class='scheme info'>{{scheme.description|truncatewords:10}}</p>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <div class="row">
-                        <p id='price'>${{product.price}}</p>
+                        <p id='cost'>${{scheme.cost}}</p>
                     </div>
                     <br>
                     <div class="row">

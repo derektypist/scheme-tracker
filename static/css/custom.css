@@ -116,3 +116,19 @@ caption p {
         font-size: 80px;
     }
 }
+
+/* Schemes */
+.items {
+    text-align: center;
+}
+
+.scheme-title {
+    text-transform: uppercase;
+    color: #212121;
+    font-weight: bolder;
+}
+
+.scheme-image {
+    width: 125px;
+    height: 95px;
+}

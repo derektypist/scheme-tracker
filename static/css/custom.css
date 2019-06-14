@@ -1,5 +1,5 @@
 /* Import Font */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /* Style for Body */
 body {
@@ -21,10 +21,6 @@ footer {
     background-color: #fff;
 }
 
-/* Style for lead Class */
-.lead {
-    
-}
 
 
 /* Style for accountform Class */

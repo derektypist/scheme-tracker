@@ -1,17 +1,17 @@
 from django.db import models
 
-from schemes.models import Scheme
+from products.models import Product
 
 class Order(models.Model):
     """ Order with street_address2 and county Blank """
-    full_name = models.CharField(max_length=50, blank=False)
-    phone_number = models.CharField(max_length=20, blank=False)
-    country = models.CharField(max_length=40, blank=False)
+    full_name = models.CharField(max_length=50, blank=False, help_text="Enter full name of individual (e.g. Joe Bloggs) or Business (e.g. Facebook)")
+    phone_number = models.CharField(max_length=20, blank=False, help_text="Enter phone number (can be landline or mobile)")
+    country = models.CharField(max_length=40, blank=True, help_text="Enter name of country (e.g. United Kingdom)")
     postcode = models.CharField(max_length=20, blank=True)
-    town_or_city = models.CharField(max_length=40, blank=False)
-    street_address1 = models.CharField(max_length=40, blank=False)
-    street_address2 = models.CharField(max_length=40, blank=True)
-    county = models.CharField(max_length=40, blank=True)
+    town_or_city = models.CharField(max_length=40, blank=False, help_text="Enter name of town or city (e.g. March, Peterborough)")
+    street_address1 = models.CharField(max_length=40, blank=False, help_text="Enter first line of home or business address")
+    street_address2 = models.CharField(max_length=40, blank=True, help_text="Enter second line of home or business address (optional)")
+    county = models.CharField(max_length=40, blank=True, help_text="Enter name of county (e.g. Cambs or Cambridgeshire).  This field is optional.")
     date = models.DateField()
     
     def __str__(self):
@@ -19,7 +19,7 @@ class Order(models.Model):
         
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False)
-    scheme = models.ForeignKey(Scheme, null=False)
+    product = models.ForeignKey(Product, null=False)
     quantity = models.IntegerField(null=False)
     
     def __str__(self):

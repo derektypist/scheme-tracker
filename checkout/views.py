@@ -5,12 +5,12 @@ from .forms import MakePaymentForm, OrderForm
 from .models import OrderLineItem
 from django.conf import settings
 from django.utils import timezone
-from schemes.models import Scheme
+from products.models import Product
 import stripe
 
-# Define
 stripe.api_key = settings.STRIPE_SECRET
 
+# Define Checkout
 @login_required()
 def checkout(request):
     if request.method=="POST":
@@ -23,20 +23,20 @@ def checkout(request):
             order.save()
             
             cart = request.session.get('cart', {})
-            total_cost = 0
+            total = 0
             for id, quantity in cart.items():
-                scheme = get_object_or_404(Scheme, pk=id)
-                total_cost += quantity * scheme.cost
+                product = get_object_or_404(Product, pk=id)
+                total += quantity * product.price
                 order_line_item = OrderLineItem(
                     order = order,
-                    scheme = scheme,
+                    product = product,
                     quantity = quantity
                     )
                 order_line_item.save()
             
             try:
                 customer = stripe.Charge.create(
-                    amount = int(total_cost * 100),
+                    amount = int(total * 100),
                     currency = "GBP",
                     description = request.user.email,
                     card = payment_form.cleaned_data['stripe_id'],
@@ -47,7 +47,7 @@ def checkout(request):
             if customer.paid:
                 messages.error(request, "You have successfully paid")
                 request.session['cart'] = {}
-                return redirect(reverse('schemes'))
+                return redirect(reverse('products'))
             else:
                 messages.error(request, "Unable to take payment")
         else:

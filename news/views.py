@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def view_news(request):
+    """ A view that renders the news page """

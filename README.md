@@ -40,9 +40,12 @@ It will be deployed to Heroku.  Make sure requirements.txt is up to date.
 
 ### Content
 
-Visited GitHub Page of PCSwimming to get ideas
+Mini Projects of DjangoBlog and Ecommerce for ideas.
 
-https://github.com/hschafer2017/PCSwimming/blob/master/static/css/base.css
+Visited DjangoProject for ideas (e.g. help text)
+
+https://docs.djangoproject.com/en/1.11/ref/models/fields/#help-text
+
 
 ### Media
 

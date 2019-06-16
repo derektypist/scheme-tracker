@@ -40,10 +40,3 @@ def create_or_edit_scheme(request, pk=None):
     else:
         form = SchemeForm(instance=scheme)
         return render(request, "schemeform.html", {'form': form})
-
-def all_schemes(request):
-    """
-    Display All Schemes
-    """
-    schemes = Scheme.objects.all()
-    return render(request, "schemeposts.html", {"schemes": schemes})

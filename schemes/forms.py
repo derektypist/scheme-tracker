@@ -5,4 +5,4 @@ from .models import Scheme
 class SchemeForm(forms.ModelForm):
     class Meta:
         model = Scheme
-        fields = ('title', 'description', 'comment', 'completion', 'cost', 'image', 'published_date')
+        fields = ('title', 'description', 'comment', 'completion', 'image', 'published_date')

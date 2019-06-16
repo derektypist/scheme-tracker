@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from schemes.models import Scheme
+from products.models import Product
 
 def cart_contents(request):
     """
@@ -8,12 +8,13 @@ def cart_contents(request):
     cart = request.session.get('cart', {})
     
     cart_items = []
-    total_cost = 0
-    scheme_count = 0
+    total = 0
+    product_count = 0
     for id, quantity in cart.items():
-        scheme = get_object_or_404(Scheme, pk=id)
-        total_cost += quantity * scheme.cost
-        scheme_count += quantity
-        cart_items.append({'id': id, 'quantity': quantity, 'scheme': scheme})
+        # Increment total and product_count
+        product = get_object_or_404(Product, pk=id)
+        total += quantity * product.price
+        product_count += quantity
+        cart_items.append({'id': id, 'quantity': quantity, 'product': product})
         
-    return {'cart_items': cart_items, 'total_cost': total_cost, 'scheme_count': scheme_count}    
+    return {'cart_items': cart_items, 'total': total, 'product_count': product_count}    

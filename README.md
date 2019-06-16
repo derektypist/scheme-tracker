@@ -2,7 +2,8 @@
 
 Scheme Tracker is designed to monitor the progress of schemes, which can be domestic (e.g. around the house
 such as Replacement of Kitchen Taps) or commercial (e.g. School having a new sports hall).  Schemes can be created or edited as well
-as being viewed.
+as being viewed.  It is an e-commerce site with products designed for various schemes
+(e.g. Flash Drive for IT Projects such as Documentary on Holidays and a new personal website).
 
 ## UX
 
@@ -10,7 +11,10 @@ As a user, I want to perform an action so that I can perform a goal.
 
 I want to edit a scheme in order to update my progress for example.
 
-I want to obtain a scheme in the place that I live in for my home or business.
+I want to get products for my scheme(s) in the place that I live in for my home or business or the site in which the works are to be carried out.
+
+Help Text is provided where the fields do not look straightforward.  For example in the completion field,
+the user may enter Not Complete.  It should be a percentage (e.g. 25 for partially complete or 100 for complete). 
 
 Wireframes are supplied in the wireframes folder.  Documentation (narrative and presentation) is supplied in the documentation folder.
 
@@ -32,6 +36,9 @@ Checkout
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
 Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
 
+
+
+
 ## Deployment
 
 It will be deployed to Heroku.  Make sure requirements.txt is up to date.
@@ -40,12 +47,15 @@ It will be deployed to Heroku.  Make sure requirements.txt is up to date.
 
 ### Content
 
-Mini Projects of DjangoBlog and Ecommerce for ideas.
+Taken from Mini Projects of DjangoBlog and Ecommerce for ideas.
 
-Visited DjangoProject for ideas (e.g. help text)
+Visited DjangoProject Website for ideas such as help text.
 
-https://docs.djangoproject.com/en/1.11/ref/models/fields/#help-text
+    https://docs.djangoproject.com/en/1.11/topics/db/models/
 
+For the help text, 
+
+    https://docs.djangoproject.com/en/1.11/ref/models/fields/#django.db.models.Field.help_text
 
 ### Media
 

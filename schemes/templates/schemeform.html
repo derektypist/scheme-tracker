@@ -2,7 +2,7 @@
 {% load bootstrap_tags %}
 {% block content %}
     <h1>New Scheme</h1>
-    <!-- Method for Form -->
+    <!-- Display Form with Submit Button -->
     <form method="POST" enctype="multipart-form-data">
         {% csrf_token %}
         {{ form | as_bootstrap }}

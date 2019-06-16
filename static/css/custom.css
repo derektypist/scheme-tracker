@@ -15,25 +15,13 @@ footer {
     color: #A9A9A9;
 }
 
-/* Style for icon-bar Class */
-.icon-bar {
-    background-color: #fff;
+/* Schemes */
+
+h1, h1 a {
+    color: #555555;
+    text-decoration: none;
 }
 
-
-
-/* Style for accountform Class */
-.accountform {
-    padding-top: 20px;
-}
-
-/* Style for story-img Class */
-.story-img {
-    margin-top: 25%;
-    display: block;
-}
-
-/* Masthead Styles */
 #masthead {
     padding-left:10px;
     min-height: 199px;
@@ -50,132 +38,96 @@ footer {
     min-height: 127px;
 }
 
-/* Style for badge Class */
-.badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
+.navbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-/* Styles for label-warning and badge-warning Classes */
-.label-warning[href],
-.badge-warning[href] {
-    background-color: #c67605;
+.navbar-brand{
+    padding: 10px 10px;
 }
 
-/* Style for Scheme Class */
-.scheme {
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+#logo {
+    color: #12AB82;
 }
 
-/* Styles for caption and p */
-caption p {
-    word-wrap: break-word;
+.story-img {
+    margin-top: 25%;
+    display: block;
 }
 
-/* Styles for row and row-flex Classes */
-.row.row-flex {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
+a, a:hover {
+    color: #223344;
+    text-decoration: none;
 }
 
-/* Style for panel-default Class */
-.panel-default {
+.icon-bar {
+    background-color: #fff;
+}
+
+.dropdown-menu {
+    min-width: 250px;
+}
+
+.panel {
     border-color: transparent;
-    padding: 0 10px;
+    border-radius: 0;
 }
 
-/* Style for panel-body Class */
-.panel-body {
-    height: 100%;
-    border: 1px solid #ddd;
+.thumbnail {
+    margin-bottom: 8px;
 }
 
-/* Style for scheme-comment Class */
-.scheme-comment {
-    min-height: 40px;
+.img-container {
+    overflow: hidden;
+    height: 170px;
 }
 
-/* Style for boldtext Class */
+.img-container img {
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 380px;
+    max-height: 280px;
+}
+
+.img-circle{
+    width:100px;
+    height: 100px; 
+}
+
+.img-schemepost{
+    height: 300px;
+    width: auto;
+}
+
+.txt-container {
+    overflow: hidden;
+    height: 100px;
+}
+
+.panel .lead {
+    overflow: hidden;
+    height: 90px;
+}
+
+.label-float {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    opacity: .9;
+    padding: 6px;
+    color: #fff;
+}
+
 .boldtext{
     font-weight: bold;
 }
 
-/* Apply Media Query */
 @media screen and (min-width: 768px) {
     #masthead h1 {
         font-size: 80px;
     }
-}
-
-/* Schemes */
-.items {
-    text-align: center;
-}
-
-.scheme-title {
-    text-transform: uppercase;
-    color: #212121;
-    font-weight: bolder;
-}
-
-.scheme-image {
-    width: 125px;
-    height: 95px;
-}
-
-/*BUTTONS*/
-
-.login-btn {
-    background-color: #FFD236;
-    border-color: #FFD236;
-    color: #fafafa;
-    width: -webkit-fill-available;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    font-weight: bold;
-    border-radius: 0px;
-    box-shadow: 0px 0px 25px #dcdcdc;
-    transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-}
-
-.login-btn:hover {
-    background-color: #002865;
-    border-color: #002865;
-    color: #fafafa;
-    cursor: pointer;
-}
-
-.new-scheme {
-    color: #fafafa;
-    width: 200px;
-    /*padding-left: 0px;*/
-}
-
-.buy {
-    width: 100px;
-    margin-top: 27px;
-    /*padding-left: 10px;*/
-    /*margin-left: 5px;*/
-    box-shadow: 0px 0px 10px #d3d3d3;
-}
-
-.dropdown-toggle {
-    width: 145px;
-}
-
-.responsive {
-    width: -webkit-fill-available;
 }

@@ -182,3 +182,8 @@ caption p {
 .product-description {
     min-height: 40px;
 }
+
+/* Jumbotron */
+.jumbotron {
+    background-color: lightgreen;
+}

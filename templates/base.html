@@ -28,11 +28,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Scheme Tracker</a>
+                
+                <a class="navbar-brand" href="{% url 'news' %}" title="News Page">Scheme Tracker</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Set Up Navigation Menu -->
+                    <!-- Set Up Navigation Menu with Icons-->
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
@@ -40,6 +41,7 @@
                         <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
                         <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
                     {% endif %}
+                    <li><a href="{% url 'news' %}"><i class="fa fa-newspaper-o"></i> News</li>
                     <li>
                         <a href="{% url 'new_scheme' %}"><i class="fa fa-plus"></i> New Scheme</a>
                     </li>

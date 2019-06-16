@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
-def view_news(request):
-    """ A view that renders the news page """
+def news(request):
+    """ Render the news page """
+    return render(request, "news.html")

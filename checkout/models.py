@@ -7,7 +7,7 @@ class Order(models.Model):
     full_name = models.CharField(max_length=50, blank=False, help_text="Enter full name of individual (e.g. Joe Bloggs) or Business (e.g. Facebook)")
     phone_number = models.CharField(max_length=20, blank=False, help_text="Enter phone number (can be landline or mobile)")
     country = models.CharField(max_length=40, blank=True, help_text="Enter name of country (e.g. United Kingdom)")
-    postcode = models.CharField(max_length=20, blank=True)
+    postcode = models.CharField(max_length=20, blank=True, help_text="Enter postcode (e.g. BR1 3ES)")
     town_or_city = models.CharField(max_length=40, blank=False, help_text="Enter name of town or city (e.g. March, Peterborough)")
     street_address1 = models.CharField(max_length=40, blank=False, help_text="Enter first line of home or business address")
     street_address2 = models.CharField(max_length=40, blank=True, help_text="Enter second line of home or business address (optional)")

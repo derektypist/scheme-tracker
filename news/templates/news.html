@@ -1,8 +1,36 @@
 {% extends 'base.html' %}
+{% load static from staticfiles %}
 {% block content %}
 
 <!-- Apply Jumbotron -->
 <div class="jumbotron">
     <p>Scheme Tracker Open Day at Royal Cambridge Hotel on 3 August 2019</p>
+</div>
+
+<!-- Display News Items -->
+<div class="container">
+    <div class="row">
+        <!-- First Column is PDF Downloads -->
+        <div class="col-xs-12 col-sm-4">
+            <h3 class="news-headings">PDF Downloads <i class="fa fa-download"></i></h3>
+            <ul class="list-items">
+                <li><a href="{% static 'pdf/news-archives.pdf' %}" target="_blank" title="News Archives">News Archives</a></li>
+                <li><a href="{% static 'pdf/forecasts.pdf' %}" target="_blank" title="Forecasts">Forecasts</a></li>
+            </ul>
+        </div>
+        
+        <!-- Second Column is Latest News -->
+        <div class="col-xs-12 col-sm-8">
+        <h3 class="news-headings">Latest News</h3>
+        <p>Scheme Tracker Open Day Takes Place at Royal Cambridge Hotel on 3 August 2019.</p>
+        <ul>
+            <li>Exhibitons include A14 Huntingdon to Cambridge Scheme</li>
+            <li>Demonstatrations include Computing (e.g. Microsoft Excel)</li>
+            <li>Live Music</li>
+            <li>Celebrities</li>
+        </ul>
+        <p>Want previous news articles and Forecasts?  You will find them in PDF Downloads.</p>
+        </div>
+    </div>
 </div>
 {% endblock %}

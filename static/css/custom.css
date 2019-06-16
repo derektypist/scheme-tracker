@@ -186,4 +186,27 @@ caption p {
 /* Jumbotron */
 .jumbotron {
     background-color: lightgreen;
+    color: purple;
+}
+
+/* List Items */
+
+.list-items {
+    color: green;
+}
+
+.list-items a {
+    text-decoration: none;
+    color: orange;
+}
+
+.list-items a:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+/* Headings in News Page */
+.news-headings {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+    color: blue;
 }

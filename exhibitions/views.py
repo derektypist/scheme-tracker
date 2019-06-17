@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
-def news(request):
+def exhibitions(request):
     """ Render the exhibitions page """
     return render(request, "exhibitions.html")

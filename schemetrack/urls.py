@@ -23,6 +23,7 @@ from search import urls as urls_search
 from checkout import urls as urls_checkout
 from news import urls as urls_news
 from exhibitions import urls as urls_exhibitions
+from demonstrations import urls as urls_demonstrations
 from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
@@ -39,5 +40,6 @@ urlpatterns = [
     url(r'^search/', include(urls_search)),
     url(r'^news/', include(urls_news)),
     url(r'^exhibitions/', include(urls_exhibitions)),
+    url(r'^demonstrations/', include(urls_demonstrations)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]

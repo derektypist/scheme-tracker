@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
+{% load static from staticfiles %}
 {% block content %}
 
 <!-- Display Heading -->
-<h3 class="denonstrations-headings">Demonstrations</h3>
+<h3 class="demonstrations-headings">Demonstrations</h3>
 
 <!-- Create a Responsive Table -->
 <div class="table-responsive">
@@ -40,6 +41,10 @@
                 </table>
         </div>
 
+<p>Want more details or a print out?  Download it here
+<a href="pdf/karaoke.pdf" target="_blank" title="Karaoke" class="download-pdf">
+        <i class="fa fa-download"></i></a>
+</p>
 <!-- Link to news page -->
 <a href="{% url 'news' %}" title="Return to News Page">Return To News Page</a>
 {% endblock %}

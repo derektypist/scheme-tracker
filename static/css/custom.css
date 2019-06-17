@@ -223,7 +223,30 @@ caption p {
     color: green;
 }
 
+/* Headings in Demonstrations Page */
+.demonstrations-headings {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+    color: fuchsia;
+}
+
+
 /* Table Styles */
 th {
     background-color: lightblue;
+}
+
+/* Download PDF Styles */
+.download-pdf {
+    color: green;
+    text-align: center;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.download-pdf i:hover {
+    color: orange;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
 }

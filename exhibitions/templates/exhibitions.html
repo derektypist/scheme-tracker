@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Apply Jumbotron -->
+<div class="jumbotron">
+    <p>Exhibitions Highlight A14 Huntingdon to Cambridge Scheme</p>
+</div>
+
+<!-- Display Heading -->
+<h3>Exhibitions</h3>
+
+<!-- Display Information -->
+<p>The highlight of the exhibitions is the A14 Huntingdon to Cambridge Scheme.
+It is due to open in December 2020.</p>
+<p>Other schemes in the exhibitions include the Norwich to Oxford Rail Link
+and the New Greater Anglia Trains.</p>
+<p>Staff will be on hand to answer all your questions about these schemes.  Publications will be
+available on the open day.</p>
+
+<!-- Link to news page -->
+<a href="{% url 'news' %}" title="Return to News Page">Return To News Page</a>
+{% endblock %}

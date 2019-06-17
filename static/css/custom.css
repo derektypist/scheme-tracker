@@ -67,8 +67,6 @@ a:hover {
 }
 
 
-
-
 .icon-bar {
     background-color: #fff;
 }
@@ -217,4 +215,10 @@ caption p {
 .news-headings {
     font-family: "Roboto", Arial, Verdana, sans-serif;
     color: blue;
+}
+
+/* Headings in Exhibitions Page */
+.exhibitions-headings {
+    font-family: "Roboto", Arial, Verdana, sans-serif;
+    color: green;
 }

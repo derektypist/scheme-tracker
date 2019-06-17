@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Display Heading -->
+<h3 class="denonstrations-headings">Demonstrations</h3>
+
+<!-- Create a Responsive Table -->
+<div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Time</th>
+                    <th>Scheme Title</th>
+                </tr>
+                
+                <tr>
+                    <td>0900</td>
+                    <td>Microsoft Excel</td>
+                </tr>
+                
+                <tr>
+                    <td>1000</td>
+                    <td>Microsoft PowerPoint</td>
+                </tr>
+                    
+                <tr>
+                    <td>1100</td>
+                    <td>Garden Lighting</td>
+                </tr>
+                
+                <tr>
+                    <td>1300</td>
+                    <td>Adobe Photoshop</td>
+                </tr>
+                
+                <tr>
+                    <td>1400</td>
+                    <td>Information Security</td>
+                </tr>
+                
+                </table>
+        </div>
+
+<!-- Link to news page -->
+<a href="{% url 'news' %}" title="Return to News Page">Return To News Page</a>
+{% endblock %}

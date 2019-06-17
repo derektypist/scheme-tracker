@@ -222,3 +222,8 @@ caption p {
     font-family: "Roboto", Arial, Verdana, sans-serif;
     color: green;
 }
+
+/* Table Styles */
+th {
+    background-color: lightblue;
+}

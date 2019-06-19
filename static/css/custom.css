@@ -211,22 +211,10 @@ caption p {
     color: purple;
 }
 
-/* Headings in News Page */
-.news-headings {
+/* Style for Headings */
+.headings {
     font-family: "Roboto", Arial, Verdana, sans-serif;
     color: blue;
-}
-
-/* Headings in Exhibitions Page */
-.exhibitions-headings {
-    font-family: "Roboto", Arial, Verdana, sans-serif;
-    color: green;
-}
-
-/* Headings in Demonstrations Page */
-.demonstrations-headings {
-    font-family: "Roboto", Arial, Verdana, sans-serif;
-    color: fuchsia;
 }
 
 

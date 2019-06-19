@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static from staticfiles %}
+{% block content %}
+
+<!-- Display Heading -->
+<h3 class="news-headings">Live Music</h3>
+
+<!-- Display Paragraph -->
+<p>Some of the music to be played on the Open Day</p>
+
+<!-- Create a Responsive Table -->
+<div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th>Artist</th>
+                    <th>Song Title</th>
+                </tr>
+                
+                <tr>
+                    <td>Fleetwood Mac</td>
+                    <td>You Make Loving Fun</td>
+                </tr>
+                
+                <tr>
+                    <td>The Firm</td>
+                    <td>Star Trekkin'</td>
+                </tr>
+                    
+                <tr>
+                    <td>Paul McCartney & Wings</td>
+                    <td>Mull of Kintyre</td>
+                </tr>
+                
+                <tr>
+                    <td>Dire Straits</td>
+                    <td>So Far Away</td>
+                </tr>
+                
+                <tr>
+                    <td>The Hollies</td>
+                    <td>Stop Stop Stop</td>
+                </tr>
+                
+                </table>
+        </div>
+
+<!-- Link to Download PDF File -->
+<p>Want a full schedule of music or a print out?  Download it here
+<a href="{% static 'pdf/music-schedule.pdf' %}" target="_blank" title="Schedule of Live Music" class="download-pdf">
+        <i class="fa fa-download"></i></a>
+</p>
+<!-- Link to news page -->
+<a href="{% url 'news' %}" title="Return to News Page">Return To News Page</a>
+
+{% endblock %}

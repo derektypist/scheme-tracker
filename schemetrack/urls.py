@@ -25,6 +25,7 @@ from news import urls as urls_news
 from exhibitions import urls as urls_exhibitions
 from demonstrations import urls as urls_demonstrations
 from music import urls as urls_music
+from celebrities import urls as urls_celebrities
 from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
@@ -43,5 +44,6 @@ urlpatterns = [
     url(r'^exhibitions/', include(urls_exhibitions)),
     url(r'^demonstrations/', include(urls_demonstrations)),
     url(r'^music/', include(urls_music)),
+    url(r'^celebrities/', include(urls_celebrities)),
     url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
 ]

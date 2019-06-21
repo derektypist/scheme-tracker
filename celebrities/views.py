@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def celebrities(request):
+    """ Render the celebrities page """
+    return render(request, "celebrities.html")

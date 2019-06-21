@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'exhibitions',
     'demonstrations',
     'music',
+    'celebrities',
 ]
 
 MIDDLEWARE = [

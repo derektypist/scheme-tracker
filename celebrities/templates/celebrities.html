@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Apply Jumbotron -->
+<div class="jumbotron">
+    <p>Top Fan Status with Sonia Grey</p>
+</div>
+
+<!-- Display Heading -->
+<h3>Celebrities</h3>
+
+<!-- Display Paragraph  -->
+<p>Celebrities attending the Scheme Tracker Open Day.</p>
+
+<div class="row">
+        <div class="col-xs-12 col-sm-4">
+        <!-- First Column - Celebrities from UK -->
+        <h3 class="news-headings">UK</h3>
+            <ul class="list-items">
+                <li><a href="https://www.annarichardson.co.uk" target="_blank" title="Anna Richardson">Anna Richardson</a></li>
+                <li><a href="https://www.victoriabeckham.com" target="_blank" title="Victoria Beckham">Victoria Beckham</a></li>
+                <li>Kate Garraway</li>
+                <li>Ruth Langsford</li>
+                <li>Susanna Reid</li>
+                <li>Joanna Gosling</li>
+            </ul>
+        </div>
+            
+        <div class="col-xs-12 col-sm-4">
+        <!-- Second Column - Celebrities from USA -->
+        <h3 class="news-headings">USA</h3>
+            <ul class="list-items">
+                <li>Kimberly Guilfoyle</li>
+                <li>Katie Couric</li>
+                <li>Kelly Ripa</li>
+                <li>Lara Spencer</li>
+                <li>Susan Hendricks</li>
+                <li>Julie Banderas</li>
+            </ul>
+        </div>
+        
+        
+        <div class="col-xs-12 col-sm-4">
+        <!-- Third Column - Celebrities from Italy -->
+        <h3 class="news-headings">Italy</h3>
+            <ul class="list-items">
+                <li>Ilaria D'Amico</li>
+                <li><a href="http://www.soniagrey.it" target="_blank" title="Sonia Grey">Sonia Grey</a></li>
+                <li>Diletta Leotta</li>
+                <li>Sara Benci</li>
+                <li>Myrta Merlino</li>
+                <li>Veronica Maya</li>
+            </ul>
+        </div>
+</div>
+
+<!-- Link to news page -->
+<a href="{% url 'news' %}" title="Return to News Page">Return To News Page</a>
+{% endblock %}

@@ -7,7 +7,7 @@ as being viewed.  It is an e-commerce site with products designed for various sc
 
 ## UX
 
-As a user, I want to perform an action so that I can perform a goal.
+As a user, I want to perform an action so that I can perform a goal.  Users can be individuals or businesses.
 
 I want to edit a scheme in order to update my progress for example.
 
@@ -20,8 +20,13 @@ Wireframes are supplied in the wireframes folder.  Documentation (narrative and 
 
 ## Features
 
-Editing, Creating and Viewing Schemes
-Checkout
+* Editing, Creating and Viewing Schemes
+* E-commerce (Products)
+* News
+    * Exhibitions
+    * Demonstrations
+    * Live Music
+    * Celebrities
 
 ## Technologies Used
 
@@ -35,6 +40,8 @@ Checkout
 
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
 Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
+
+In the terminal window use python3 manage.py test schemes
 
 
 
@@ -56,6 +63,13 @@ Visited DjangoProject Website for ideas such as help text.
 For the help text, 
 
     https://docs.djangoproject.com/en/1.11/ref/models/fields/#django.db.models.Field.help_text
+
+Did a Google Search on Royal Cambridge Hotel.  The address was obtained from the Contact Page of the
+Royal Cambridge Hotel Website.
+
+    https://theroyalcambridgehotel.co.uk
+
+
 
 ### Media
 

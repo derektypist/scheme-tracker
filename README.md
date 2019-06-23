@@ -40,11 +40,9 @@ Wireframes are supplied in the wireframes folder.  Documentation (narrative and 
 
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
 Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
+External links (e.g. PDF) open in a new window without leaving the web page.
 
 In the terminal window use python3 manage.py test schemes
-
-
-
 
 ## Deployment
 

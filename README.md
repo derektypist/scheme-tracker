@@ -3,7 +3,7 @@
 Scheme Tracker is designed to monitor the progress of schemes, which can be domestic (e.g. around the house
 such as Replacement of Kitchen Taps) or commercial (e.g. School having a new sports hall).  Schemes can be created or edited as well
 as being viewed.  It is an e-commerce site with products designed for various schemes
-(e.g. Flash Drive for IT Projects such as Documentary on Holidays and a new personal website).
+(e.g. Flash Drive for IT Projects such as Documentary on Holidays and a new personal website, Fire Extinguisher for Sports Hall).
 
 ## UX
 
@@ -28,6 +28,10 @@ Wireframes are supplied in the wireframes folder.  Documentation (narrative and 
     * Live Music
     * Celebrities
 
+In the news page there are PDF Downloads for News Archives (previous news), Forecasts (line graph
+with data table for Total Views against Published Date from 1 July 2019 to 1 December 2019) and
+Information about Open Day.
+
 ## Technologies Used
 
 * HTML5
@@ -46,7 +50,8 @@ In the terminal window use python3 manage.py test schemes
 
 ## Deployment
 
-It will be deployed to Heroku.  Make sure requirements.txt is up to date.
+It will be deployed to Heroku.  Make sure requirements.txt is up to date by using pip3 freeze > requirements.txt
+after adding new libraries (e.g. Stripe).
 
 ## Credits
 

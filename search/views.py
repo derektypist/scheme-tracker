@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from schemes.models import Scheme
+from products.models import Product
 
-# Create your views here.
+# Product Search
 def do_search(request):
-    schemes = Scheme.objects.filter(name__icontains=request.GET['q'])
-    return render(request, "schemeposts.html", {"schemes": schemes})
+    products = Product.objects.filter(name__icontains=request.GET['q'])
+    return render(request, "products.html", {"products": products})

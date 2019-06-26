@@ -58,6 +58,7 @@ after adding new libraries (e.g. Stripe).
 ### Content
 
 Taken from Mini Projects of DjangoBlog and Ecommerce for ideas.
+The fire extinguisher is taken from a clipart image in Word 2010.  Accessed 26 June 2019.
 
 Visited DjangoProject Website for ideas such as help text.
 

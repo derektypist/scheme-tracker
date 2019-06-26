@@ -32,6 +32,14 @@ In the news page there are PDF Downloads for News Archives (previous news), Fore
 with data table for Total Views against Published Date from 1 July 2019 to 1 December 2019) and
 Information about Open Day.
 
+Products are classed according to categories.
+
+* Ga - Garden
+* He - Health & Safety
+* I - Information Technology
+* Li - Lighting
+* Ot - Other
+
 ## Technologies Used
 
 * HTML5
@@ -58,7 +66,7 @@ after adding new libraries (e.g. Stripe).
 ### Content
 
 Taken from Mini Projects of DjangoBlog and Ecommerce for ideas.
-The fire extinguisher is taken from a clipart image in Word 2010.  Accessed 26 June 2019.
+The fire extinguisher is taken from a clipart image in Word 2010.  A screenshot was taken.  Accessed 26 June 2019.
 
 Visited DjangoProject Website for ideas such as help text.
 
@@ -68,7 +76,7 @@ For the help text,
 
     https://docs.djangoproject.com/en/1.11/ref/models/fields/#django.db.models.Field.help_text
 
-Did a Google Search on Royal Cambridge Hotel.  The address was obtained from the Contact Page of the
+Did a Google Search on Royal Cambridge Hotel.  In openday-info.pdf, the address was obtained from the Contact Page of the
 Royal Cambridge Hotel Website.
 
     https://theroyalcambridgehotel.co.uk

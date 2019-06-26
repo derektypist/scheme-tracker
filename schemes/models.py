@@ -9,7 +9,7 @@ class Scheme(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     published_date = models.DateTimeField(blank=True, null=True, default=timezone.now)
     views = models.IntegerField(default=0)
-    completion = models.DecimalField(max_digits=3, decimal_places=2, help_text="Enter a percentage, (e.g. 25 for Partially Complete or 100 for Complete)")
+    completion = models.DecimalField(max_digits=3, help_text="Enter a percentage, (e.g. 25 for Partially Complete or 100 for Complete)")
     image = models.ImageField(upload_to='images')
     
     def __unicode__(self):

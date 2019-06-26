@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                <a class="navbar-brand" href="{% url 'news' %}" title="News Page">Scheme Tracker</a>
+                <a class="navbar-brand" href="/" title="Products Page">Scheme Tracker</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -48,8 +48,8 @@
                     <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shopping-cart"></i> Cart
-                            {% if scheme_count > 0 %}
-                            <label class="badge badge-warning">{{ scheme_count }}</label>
+                            {% if product_count > 0 %}
+                            <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
                         </a>
                     </li>

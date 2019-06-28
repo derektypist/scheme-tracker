@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: teal;
+    color: turquoise;
     text-decoration: none;
 }
 
@@ -240,7 +240,6 @@ th {
 }
 
 /* Social Links */
-
 .social-links {
     padding-bottom: 15px;
 }

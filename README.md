@@ -18,6 +18,8 @@ the user may enter Not Complete.  It should be a percentage (e.g. 25 for partial
 
 Wireframes are supplied in the wireframes folder.  Documentation (narrative and presentation) is supplied in the documentation folder.
 
+Links to my social media (e.g. LinkedIn) are provided.
+
 ## Features
 
 * Editing, Creating and Viewing Schemes
@@ -52,9 +54,10 @@ Products are classed according to categories.
 
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
 Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
-External links (e.g. PDF) open in a new window without leaving the web page.
+External links (e.g. PDF) will open in a new tab using target="_blank".  All links have been manually tested to ensure that
+they are pointing to the correct destination.
 
-In the terminal window use python3 manage.py test schemes
+In the terminal window use python3 manage.py test products.
 
 ## Deployment
 
@@ -66,7 +69,6 @@ after adding new libraries (e.g. Stripe).
 ### Content
 
 Taken from Mini Projects of DjangoBlog and Ecommerce for ideas.
-The fire extinguisher is taken from a clipart image in Word 2010.  A screenshot was taken.  Accessed 26 June 2019.
 
 Visited DjangoProject Website for ideas such as help text.
 
@@ -81,9 +83,12 @@ Royal Cambridge Hotel Website.
 
     https://theroyalcambridgehotel.co.uk
 
-
-
 ### Media
+
+The fire extinguisher in fireextinguishers.png was taken from clipart search of fire extinguisher in Word 2010 (Starter).  A
+screenshot was taken.  Accessed 26 June 2019.
+
+The rest of the photos are taken by myself.
 
 ### Acknowledgements
 

@@ -7,13 +7,14 @@ as being viewed.  It is an e-commerce site with products designed for various sc
 
 ## UX
 
-As a user, I want to perform an action so that I can perform a goal.  Users can be individuals or businesses.
+Users can be individuals or businesses.  Examples of individuals include students, artists and homeowners.
+Examples of businesses include London Borough of Bromley, Cambridgeshire County Council and Drax Power.
 
-I want to edit a scheme in order to update my progress for example.
+As a user, I want to edit a scheme in order to update my progress for example.
 
-I want to get products for my scheme(s) in the place that I live in for my home or business or the site in which the works are to be carried out.
+As a user, I want to get products for my scheme(s) in the place that I live in for my home or business or the site in which the works are to be carried out.
 
-Help Text is provided where the fields do not look straightforward.  For example in the completion field,
+Help Text is provided where the fields do not look straightforward as they would be.  For example in the completion field,
 the user may enter Not Complete.  It should be a percentage (e.g. 25 for partially complete or 100 for complete). 
 
 Wireframes are supplied in the wireframes folder.  Documentation (narrative and presentation) is supplied in the documentation folder.
@@ -50,18 +51,32 @@ Products are classed according to categories.
 * Django
 * JavaScript
 
+Bootstrap - To Facilitate FontAwesome.
+
 ## Testing
 
 Vary the width of the browser window.  Use different browsers (e.g. Microsoft Edge, Safari).
+
 Credit Card Testing - Use the credit card number of 4242424242424242 and any security key.
+I do not use my own credit card for testing purposes.
+
+Test with the stripe account that has not been activated and the message regarding unable to
+take payment appears.
+
 External links (e.g. PDF) will open in a new tab using target="_blank".  All links have been manually tested to ensure that
 they are pointing to the correct destination.
 
-In the terminal window use python3 manage.py test products.
+In the terminal window use the command
+
+    python3 manage.py test products
 
 ## Deployment
 
-It will be deployed to Heroku.  Make sure requirements.txt is up to date by using pip3 freeze > requirements.txt
+It will be deployed to Heroku.  Make sure requirements.txt is up to date by using 
+the command
+
+    pip3 freeze > requirements.txt
+
 after adding new libraries (e.g. Stripe).
 
 ## Credits
@@ -69,6 +84,7 @@ after adding new libraries (e.g. Stripe).
 ### Content
 
 Taken from Mini Projects of DjangoBlog and Ecommerce for ideas.
+Also from www.github.com/derektypist/bootstrap
 
 Visited DjangoProject Website for ideas such as help text.
 
@@ -88,7 +104,7 @@ Royal Cambridge Hotel Website.
 The fire extinguisher in fireextinguishers.png was taken from clipart search of fire extinguisher in Word 2010 (Starter).  A
 screenshot was taken.  Accessed 26 June 2019.
 
-The rest of the photos are taken by myself.
+The rest of the photos (profile.jpg, colouredstakelight.jpg and flashdrive.jpg) are taken by myself.
 
 ### Acknowledgements
 

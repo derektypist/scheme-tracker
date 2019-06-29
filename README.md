@@ -109,3 +109,5 @@ The rest of the photos (profile.jpg, colouredstakelight.jpg and flashdrive.jpg) 
 ### Acknowledgements
 
 Mentor - Oluwaseun Owonikoku
+
+[![Build Status](https://travis-ci.org/derektypist/scheme-tracker.svg?branch=master)](https://travis-ci.org/derektypist/scheme-tracker)

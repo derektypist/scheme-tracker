@@ -86,6 +86,9 @@ the command
 
 after adding new libraries (e.g. Stripe).
 
+Config Vars in Heroku include AWS Access Key ID, AWS Secret Access Key, Database URL,
+Secret Key, Stripe Publishable, Stripe Secret and Disable Collectstatic.
+
 ## Credits
 
 ### Content
